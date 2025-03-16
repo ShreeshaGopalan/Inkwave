@@ -1,0 +1,16 @@
+
+    <%- include('partials/header.ejs') %>
+    <main class="blog-details">
+        
+        <div class="container">
+            <a href="/explore-blogs" class="read-more">Back to Blogs</a>
+            <h1><%= blog.title %></h1>
+            <div class="ad-container"><p class="blog-author">By <%= blog.author %></p>
+            <p class="blog-date">Published on <%= blog.date %></p></div>
+        <div class="content">
+            <p><%= blog.content %></p>
+        </div>
+        </div>
+    </main>
+    <%- include('partials/footer.ejs') %>
+    
